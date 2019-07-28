@@ -1,0 +1,211 @@
+html,
+body,
+.root {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+
+
+/* main page */
+
+.headerTxt {
+  background: #6aaac5;
+  padding: 10px 0;
+  display: flex;
+}
+
+.headerTxt h1 {
+  color: #e7edef;
+  font: bold 2.5em 'Old Standard TT', serif;
+  margin: 0;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.bookListContent {
+  display: flex;
+  margin-top: 50px;
+  height: auto;
+}
+
+.bookshelf {
+  padding: 0 10px 20px;
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.bookshelfTitle {
+  border-bottom: 1px solid #dedede;
+  font: bold 2.25em 'Old Standard TT', serif;
+}
+
+.bookshelfBooks {
+  text-align: center;
+}
+
+
+.booksGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.booksGrid li {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.book {
+  width: 140px;
+}
+
+
+.bookTop {
+  align-items: flex-end;
+  display: flex;
+  height: 200px;
+  position: relative;
+}
+
+.bookShelfChanger {
+  background: #98cbe1;
+  background-image: url('../icons/action.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  bottom: -10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 40px;
+  position: absolute;
+  right: 0;
+  width: 40px;
+}
+
+.bookShelfChanger select {
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+
+/* book cover */
+
+.bookCover {
+  background: #eee;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 188px;
+  width: 128px;
+}
+
+.searchBooksWrapperBar {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.searchBooksInputWrapper {
+  background: #d9e7c8;
+  flex: 1;
+}
+
+.searchBooksWrapperBar input {
+  border: none;
+  font-size: 1.25em;
+  outline: none;
+  padding: 15px 10px;
+  width: 100%;
+}
+
+.backToHome {
+  background: #e7edef;
+  background-image: url('../icons/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  display: block;
+  font-size: 0;
+  height: 53px;
+  left: 15px;
+  top: 20px;
+  width: 50px;
+}
+
+.searchBooksResults {
+  padding: 80px 10px 20px;
+}
+
+.addNewBooks{
+  margin-right: 20px;
+  display: flex;
+}
+.addNewBooks span{
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 13px;
+  margin-right: 13px;
+}
+.addNewBooks a {
+  background: #507461;
+  background-image: url('../icons/add.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: block;
+  font-size: 0;
+  height: 50px;
+  width: 50px;
+}
+.details {
+  bottom: -10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 40px;
+  position: absolute;
+  left: 0;
+  width: 40px;
+}
+.details a{
+  
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: block;
+  font-size: 0;
+  height: 50px;
+  width: 50px;
+}
+.booksGrid{
+  display: flex;
+}
+@media (max-width: 600px) {
+  .bookshelf {
+    
+    margin-top: 20px;
+  }
+  .bookListContent {
+    display: block;
+    
+  }
+  .bookshelf:first-child {
+    
+    margin-top: 0px;
+  }
+}
+
+
+
+
+
+
